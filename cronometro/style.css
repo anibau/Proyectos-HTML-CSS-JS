@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(imagenes/clocks-1000-x-998-background-l0i1yrizs80fclm2.jpg); /*otra opcion:  no repeat center center / cover */
+    background-size: cover;
+    
+}
+.contenedor-principal {
+    width: 80vw;
+    max-width: 600px;
+    min-height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.contenedor-botones {
+    padding: 20px;
+}
+#cronometro {
+    width: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    user-select: none;
+}
+.boton {
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+#boton-inicio-pausa.iniciar,
+#boton-inicio-pausa.iniciar i {
+    background-color: #08e008;
+
+}
+#boton-inicio-pausa.pausar,
+#boton-inicio-pausa.pausar i {
+    background-color: #ffdc00;
+}
+#boton-reiniciar {
+    background-color: red;
+}

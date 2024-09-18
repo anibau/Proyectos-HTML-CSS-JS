@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: system-ui, sans-serif;
+    width: 100%;
+  }
+  #navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #C0AB92;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: fixed;
+    border-radius: 0 0 0 30%;
+    border-bottom: 5px solid black; 
+  }
+  #navbar ul{
+    display: flex;
+  }
+  #navbar ul li{
+    list-style: none;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  #navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+  }
+  #navbar ul li a:hover{
+      color: white;
+      padding:5px 15px;
+      background-color: #685844;
+      border-radius: 0 30% 0 30%;
+  }
+  #welcome-section{
+    padding-top: 80px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #welcome-section h1{
+  font-family: "Gloock", serif;
+  width: 50%;
+  padding: 30px 0px;
+  background-color: #665744;
+  text-align:center;
+  line-height: 1.5;
+  font-size: 2rem;
+  z-index: -1;
+  position: absolute;
+  top: 22vh;
+  border: 10px ridge rgb(143, 74, 74);
+  color: #ddd7cf;
+  
+  }
+  #welcome-section h3{
+    font-family: "Azeret Mono", monospace;
+    width: 80%;
+    padding: 100px 10px 30px 10px;
+    background-color: #e0ccb2;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.5rem;
+    z-index: -2;
+    border-radius: 0 0 0 30%;
+    border-bottom: 5px solid black;
+  }
+  #projects{
+    background-color: #ddd6cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    border-radius: 0 0 0 40px;
+    border-bottom: 5px solid black;
+  }
+  #projects h2{
+    padding: 10px;
+    border-bottom: 2px solid black;
+    margin: 20px 0;
+    font-size: 30px;
+  }
+  #container-proyect{
+    width: 90%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border: 10px double rgb(70, 24, 24);
+    background-color: #a79989
+  }
+  #projects div{
+    display: flex;
+  }
+  #projects div a{
+    text-decoration: none;
+    margin: 10px;
+  }
+  #projects div a p{
+    background-color: black;
+    color: #ddd6cd;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #projects div a img{
+    width: 450px;
+    height: 500px;
+  }
+  #contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #contact-div{
+    background-color: #f8eee2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  #contact-div h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  #contact-div fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    background-color: #C0AB92;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid;
+  }
+  #contact-div fieldset legend{
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 15px;
+    background-color: #C0AB92;
+    
+  }
+  #contact-div fieldset label, textarea{
+    display: flex;
+    width: 80%;
+    margin: 5px 0;
+  }
+  #contact-div fieldset label input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid;
+  }
+  label .bi{
+    font-size: 25px;
+    padding: 2px;
+  }
+  #contact-div fieldset textarea{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid;
+  }
+  #btn-submit{
+    padding: 5px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+  #redes{
+    width: 100%;
+    background-color: #f8eee2;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    border-radius: 0 0 0 15%;
+    border-bottom: 5px solid black;
+  }
+  #redes a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 0 15px;
+  }
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+  footer p{
+    padding: 10px;
+    width: 70vw;
+    border: 2px solid black;
+    border-radius: 0 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  @media(max-width:800px){
+    #welcome-section h1{
+      font-size: 1.3rem;
+    }
+    #welcome-section h3{
+       line-height: 1.5;
+      font-size: 1rem;
+      width: 75%;
+    }
+    #projects div a img{
+    width: 320px;
+    height: 400px;
+   }
+   #redes a{
+     margin: 5px;
+     padding: 5px;
+     font-size: 15px;
+   }
+  }
